@@ -1,0 +1,139 @@
+/*variabel*/
+:root{
+    --dasar :#708090;
+    --dasarbg :#4c5c6c;
+    --dasar2 : #F5F5F5;
+    --dasar3:	#87CEEB;
+}
+
+/* font style */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600;800&display=swap');
+
+/*ketentuan global*/
+section{
+    padding: 50px 0 100px;
+}
+
+/*custom css style*/
+.bg-abu{
+    background: var(--dasar) !important;
+}
+.bg-abuTua{
+    background: var(--dasarbg) !important;
+}
+
+
+.logo{
+    width: 100px;
+
+}
+
+.navbar_color{
+    background-color:rgb(208, 208, 208);
+}
+
+.navbar-nav a{
+    color: rgb(143, 10, 10) !important;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(143, 10, 10) !important;
+    font-family: "Montserrat", serif;
+}
+
+.navbar-nav a:hover{
+    
+    color: #000000 !important;
+    border-bottom: 2px solid rgb(0, 0, 0) !important;
+}
+
+/*HERO SECTION*/
+#hero-section{
+    background: url('ASSET/BANNER\ WEB.png') no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    padding: 0;
+}
+
+#hero-section::after{
+content: '';
+display: block;
+height: 100%;
+width: 100%;
+background-color:rgba(148, 0, 0, 0.584);
+background-size: cover;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 0;
+}
+
+#hero-section .row{
+    position: absolute;
+    z-index: 1;
+}
+
+#hero-section p{
+    font-family:"Montserrat", serif;
+}
+
+#hero-section h1{
+    margin-top: 160px;
+    font-weight: 800;
+    font-family: "Montserrat", serif;
+}
+
+#hero-section a{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+}
+
+#hero-section a:hover{
+    background-color: #4c5c6c !important;
+}
+/*value produk*/
+
+#produk .row{
+    row-gap: 3rem;
+}
+
+@media(min-width:992px){
+    #produk img{
+        height: auto;
+        width: 100%;
+
+    }
+
+    #produk .detail{
+        width: 100%;
+    }
+}
+
+
+#achivment .row{
+    row-gap: 3rem;
+}
+
+#achivment img{
+    height: auto;
+    width: 150px;
+}
+
+#foother{
+    background-color: #b5c3d194;
+}
+
+#foother .sosmet-icon{
+    height: auto;
+    width: 35px;
+}
+
+#foother .sosmet-iconig {
+    width: 30px;
+
+}
+
+#foother .sosmet-iconwa{
+    width: 30px;
+
+}
